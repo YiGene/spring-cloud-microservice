@@ -1,0 +1,13 @@
+server:
+    host: 192.168.18.5
+    port: 8800
+spring:
+   application:
+     name: portfolio-service
+   cloud:
+      consul:
+        host: 192.168.18.5
+        port: 8500
+        discovery:
+          healthCheckPath: /
+          healthCheckInterval: 5s
